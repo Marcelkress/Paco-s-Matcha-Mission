@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - PlatformKeyPickup
+  - Chest
+  - Water
+  - Leaf
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Collision
+  - Water
+  - UI
+  - Player
+  - Interactable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Far Background
+    uniqueID: 2040090079
+    locked: 0
+  - name: Background
+    uniqueID: 1230804299
+    locked: 0
+  - name: Collision
+    uniqueID: 1436729787
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1831051613
+    locked: 0
+  - name: Close foreground
+    uniqueID: 779442681
+    locked: 0
+  m_RenderingLayers:
+  - Default
