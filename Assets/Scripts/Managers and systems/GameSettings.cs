@@ -8,7 +8,7 @@ public class GameSettings : MonoBehaviour
     {
         QualitySettings.vSyncCount = 0;
         Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
-        Application.targetFrameRate = 30;
+        Application.targetFrameRate = 60;
     }
 
     public void Resolution(int index)

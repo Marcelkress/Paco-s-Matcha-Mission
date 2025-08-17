@@ -55,6 +55,22 @@ public class MatchaTracker : MonoBehaviour
             Debug.Log("Max Held");            
         }            
     }
+
+    public void UseMatcha()
+    {
+        currentHeldMatcha--;
+
+        UICounterText.text = "Matcha: ";
+
+        UICounterText.text += currentHeldMatcha.ToString();
+
+        UICounterText.text += "/10";
+        
+        if (currentHeldMatcha <= 0)
+        {
+            currentHeldMatcha = 0;
+        } 
+    }
     
     private IEnumerator ShowUnlockText()
     {
