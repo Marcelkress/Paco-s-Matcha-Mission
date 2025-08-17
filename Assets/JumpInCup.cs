@@ -17,11 +17,16 @@ public class JumpInCup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.DOMove(targets[targetIndex].position, moveDuration, true);
+        transform.DOMove(targets[targetIndex].position, moveDuration, false);
 
         if (Vector2.Distance(transform.position, targets[targetIndex].position) < 0.01) // if its at the target
         {
             targetIndex++;
+
+            if (targetIndex > 1)
+            {
+                Destroy(this);
+            }
         }
     }
 }

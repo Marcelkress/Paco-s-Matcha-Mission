@@ -29,5 +29,11 @@ public class InteractPrompt : MonoBehaviour
             promptText.DOFade(0, fadeDuration);
         }
     }
+    public void HidePrompt()
+    {
+        promptSprite.DOFade(0, fadeDuration);
+        buttonSprite.DOFade(0, fadeDuration);
+        promptText.DOFade(0, fadeDuration);
+    }
 
 }

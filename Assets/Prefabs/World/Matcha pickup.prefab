@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 724588059979425092}
   - component: {fileID: 4821934159189766017}
   - component: {fileID: 625356972487940238}
-  - component: {fileID: 1623770655064828925}
   - component: {fileID: 686543093104444840}
   - component: {fileID: 1982018553663137272}
   - component: {fileID: 518536129423662510}
@@ -193,6 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupClip: {fileID: 8300000, guid: bca6c9855dc71ec4a93c01d2cae086e8, type: 3}
+  healAmount: 1
 --- !u!61 &4821934159189766017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -266,22 +266,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1623770655064828925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5544221986617776463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19b5c229dfc124242a8dffc8ec53de5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  promptText: {fileID: 591932359425294786}
-  promptSprite: {fileID: 90657342495429054}
-  buttonSprite: {fileID: 769793526402166056}
-  fadeDuration: 0.2
 --- !u!61 &686543093104444840
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -447,7 +431,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 118238642845929445, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
       propertyPath: m_text
-      value: Press to collect
+      value: Collect Piece
       objectReference: {fileID: 0}
     - target: {fileID: 3465959534992984298, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
       propertyPath: m_Name
@@ -527,11 +511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6366915599093384206, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.5
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 6366915599093384206, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.36
+      value: 2.86
       objectReference: {fileID: 0}
     - target: {fileID: 6366915599093384206, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -545,32 +529,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9211616280486625950, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3509188
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211616280486625950, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7030937
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211616280486625950, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.17374885
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211616280486625950, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
---- !u!212 &90657342495429054 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 635274093275144089, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
-  m_PrefabInstance: {fileID: 689866801522462247}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &591932359425294786 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 118238642845929445, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
-  m_PrefabInstance: {fileID: 689866801522462247}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!212 &769793526402166056 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 233128425358648079, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}
-  m_PrefabInstance: {fileID: 689866801522462247}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5893296779495868969 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6366915599093384206, guid: 08d99c339a106425e9b0ff352441dd05, type: 3}

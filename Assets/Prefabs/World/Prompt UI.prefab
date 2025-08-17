@@ -99,6 +99,8 @@ GameObject:
   - component: {fileID: 6366915599093384206}
   - component: {fileID: 8809467651422758493}
   - component: {fileID: 118238642845929445}
+  - component: {fileID: 900906981447678369}
+  - component: {fileID: 9211616280486625950}
   m_Layer: 7
   m_Name: Prompt UI
   m_TagString: Untagged
@@ -191,7 +193,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to open
+  m_text: Give Matcha
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c51ee594a62034fb1b3b9adf4eec2af9, type: 2}
   m_sharedMaterial: {fileID: 259592589809361496, guid: c51ee594a62034fb1b3b9adf4eec2af9, type: 2}
@@ -265,6 +267,68 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 8809467651422758493}
   m_maskType: 0
+--- !u!114 &900906981447678369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3465959534992984298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b5c229dfc124242a8dffc8ec53de5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptText: {fileID: 118238642845929445}
+  promptSprite: {fileID: 635274093275144089}
+  buttonSprite: {fileID: 233128425358648079}
+  fadeDuration: 0.2
+--- !u!61 &9211616280486625950
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3465959534992984298}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.60739005, y: -1.4995868}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.2182014, y: 1.0644617}
+  m_EdgeRadius: 0
 --- !u!1 &7788058802186463568
 GameObject:
   m_ObjectHideFlags: 0

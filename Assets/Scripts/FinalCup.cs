@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Sirenix.OdinInspector;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ public class FinalCup : MonoBehaviour, IInteractable
     public void Interact(Transform cat)
     {
         StartCoroutine(BeginAnimation(cat));
+        gameObject.GetComponentInChildren<InteractPrompt>().HidePrompt();
     }
 
     private IEnumerator BeginAnimation(Transform parent)
@@ -37,6 +39,11 @@ public class FinalCup : MonoBehaviour, IInteractable
         {
             anim.SetTrigger("Burst");
             Destroy(other.gameObject);
+        }
+
+        if (other.CompareTag("Player"))
+        {
+            
         }
     }
 }
