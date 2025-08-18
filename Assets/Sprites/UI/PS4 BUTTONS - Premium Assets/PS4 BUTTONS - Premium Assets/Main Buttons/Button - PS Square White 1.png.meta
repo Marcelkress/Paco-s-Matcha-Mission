@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Button - PS Square White 1_0: -4270576008325460304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

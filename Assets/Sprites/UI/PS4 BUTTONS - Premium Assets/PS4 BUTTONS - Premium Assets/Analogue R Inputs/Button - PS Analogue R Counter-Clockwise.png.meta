@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Button - PS Analogue R Counter-Clockwise_0: -5710320123648715775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

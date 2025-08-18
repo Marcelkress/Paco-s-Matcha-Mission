@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Button - PS Cross White 1_0: -4818414683924556385
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

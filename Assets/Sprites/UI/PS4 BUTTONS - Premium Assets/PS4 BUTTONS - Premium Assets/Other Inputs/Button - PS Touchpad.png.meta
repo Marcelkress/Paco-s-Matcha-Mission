@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Button - PS Touchpad_0: -4655591801826538119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

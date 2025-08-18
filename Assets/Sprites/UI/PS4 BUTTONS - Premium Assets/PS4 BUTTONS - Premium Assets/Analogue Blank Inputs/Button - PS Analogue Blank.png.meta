@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Button - PS Analogue Blank_0: 4394192018212277177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Button - PS Directional Arrows Down 2_0: 1432297947263313097
+      Button - PS Directional Arrows Down 2_1: -3063630956755499564
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

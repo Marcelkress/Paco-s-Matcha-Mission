@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Button - PS Triangle White 1_0: -3515488651976473007
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

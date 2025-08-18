@@ -55,6 +55,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -76,6 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 808774221
   m_SortingLayer: 0
   m_SortingOrder: 2
@@ -327,6 +330,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -348,6 +353,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
@@ -553,9 +559,8 @@ MonoBehaviour:
   dustRaycastOffset: 0.4
   dustRaycastLength: 0.5
   dustLandEffect: {fileID: 7184444619679606876, guid: be03b7b5fc7ab402daad9a3975bdda70, type: 3}
-  sprintDust: {fileID: 1230565689591744276, guid: 090da5c9f329e4b60ab11f51e08cbc4d, type: 3}
-  sprintDustGround: {fileID: 3049473704561788132, guid: 5a07d086d2ae14f2f8b5c1d9e4fd2e87, type: 3}
-  spawnOffset: 0.25
+  sprintDust: {fileID: 4407387440242571036, guid: 72fc40c3d65c84f07b67b1b2c9ac8d91, type: 3}
+  spawnOffset: {x: 0, y: 0}
   shakeIntensity: 0.5
   shakeTime: 0.1
 --- !u!114 &4241071574165460721

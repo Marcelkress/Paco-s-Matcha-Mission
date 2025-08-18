@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Button - PS R2 Blank \u2013 2_0": 5519122775533457369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
