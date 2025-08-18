@@ -144,7 +144,7 @@ public class IntroSequence : MonoBehaviour
         }
         
         // Reached end
-        if (boyDialogueIndex == boyTexts.Length)
+        if (girlDialogueIndex == girlTexts.Length)
         {
             StartCoroutine(End());
             skipAction.performed -= SkipDialogue;
