@@ -30,7 +30,6 @@ public class KeyPickup : MonoBehaviour, IInteractable
         }
         else
         {
-            Debug.Log("Drop object");
             pickedUp = false;
             rb.simulated = true;
             gameObject.transform.parent = null;

@@ -1,0 +1,20 @@
+{
+    "asset": "c7edc3ba312964e539f3b9b884b395e0",
+    "fileName": "0198d724-1838-7018-9fa3-5d2a64725b5d.png",
+    "prompt": "Pixel art, green leaf, matcha leaf, green colors, cute, side view, single leaf",
+    "negativePrompt": "White pixels",
+    "model": "b91fcf71-f4cf-43cb-ba1e-1f22a1296e46",
+    "modelName": "8-bit Pixel",
+    "customSeed": -1,
+    "w3CTraceId": "7e894007ea42356d71ae1f0cdcddfda6",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

@@ -80,10 +80,10 @@ public class IntroSequence : MonoBehaviour
     {
         textBoxBoy.DOFade(1, fadeDuration);
         NextDialogue();
-
-        yield return new WaitForSeconds(waitTime);
         
         TriggerWalk();
+        
+        yield break;
     }
 
     public void TriggerWalk()
@@ -177,8 +177,9 @@ public class IntroSequence : MonoBehaviour
         boyAnim.SetBool("Walk", true);
         girlAnim.SetBool("Walk", true);
         girl.transform.DOScale(new Vector3(girl.transform.localScale.x * -1, girl.transform.localScale.y), 0f);
-        textBoxBoy.DOFade(0, fadeDuration);
-        boyTexts[boyTexts.Length - 1].DOFade(0, fadeDuration);
+        
+        textBoxGirl.DOFade(0, fadeDuration);
+        girlTexts[girlTexts.Length - 1].DOFade(0, fadeDuration);
 
         girl.transform.DOMove(endWalkTarget.transform.position, walkTime + 2, false);
         boy.transform.DOMove(endWalkTarget.transform.position, walkTime + 2, false);

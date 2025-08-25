@@ -1,4 +1,4 @@
-using Sirenix.OdinInspector;
+    using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class MushroomBehavior : MonoBehaviour
@@ -13,9 +13,9 @@ public class MushroomBehavior : MonoBehaviour
     [Title("References")] public GameObject attackOrigin;
     public LayerMask playerLayer;
     public LayerMask collisionLayer;
+    public BoxCollider2D box;
 
     private Animator anim;
-    private BoxCollider2D box;
     private Transform player;
     private bool canMove;
     private int faceDir;

@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using TMPro;
 
 public class GameSettings : MonoBehaviour
 {
@@ -32,6 +30,11 @@ public class GameSettings : MonoBehaviour
                 Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
                 break;
         }
+    }
+
+    public void ChangeMusicVolume(float value)
+    {
+        MusicManager.instance.audioSource.volume = value;
     }
 
     public void RefreshRate(int rate)

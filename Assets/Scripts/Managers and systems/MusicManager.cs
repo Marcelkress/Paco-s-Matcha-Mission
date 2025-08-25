@@ -10,15 +10,13 @@ public class MusicManager : MonoBehaviour
 
     public float audioFadeTime = 2f, targetVolume = 0.8f;
     
-    private AudioSource audioSource;
+    [HideInInspector] public AudioSource audioSource;
 
     public static MusicManager instance;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
-            
         DontDestroyOnLoad(this);
 
         if (instance == null)

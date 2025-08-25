@@ -167,7 +167,7 @@ MonoBehaviour:
   playerDetectRadius: 1.75
   attackDamageRadius: 0.21
   attackDamage: 1
-  edgeDetectRayLength: 0.001
+  edgeDetectRayLength: 0.1
   attackOrigin: {fileID: 2082594975817550667}
   playerLayer:
     serializedVersion: 2
@@ -175,6 +175,7 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 8
+  box: {fileID: 4538146268980715806}
 --- !u!61 &4538146268980715806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -262,7 +263,7 @@ AudioSource:
   m_GameObject: {fileID: 2828858468173681088}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2868845183763984420, guid: a7b0b262ae01b46dab32133e3489faab, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1

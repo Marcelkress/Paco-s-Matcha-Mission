@@ -1,0 +1,29 @@
+{
+    "asset": "c7edc3ba312964e539f3b9b884b395e0",
+    "fileName": "0198d72f-29c7-7cd0-b13a-0740921c831f.png",
+    "prompt": "leaf, green, flat, matcha, single leaf, cute, simple",
+    "negativePrompt": "blurry, messy pixels, messy coloring, multiple leafs, white pixels",
+    "model": "b91fcf71-f4cf-43cb-ba1e-1f22a1296e46",
+    "modelName": "8-bit Pixel",
+    "customSeed": -1,
+    "w3CTraceId": "2dbed383f4abd80a13275c370ffae678",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": [
+            {
+                "doodleReferenceType": 7,
+                "doodle": [],
+                "label": "Image",
+                "strength": 0.25,
+                "invertStrength": false,
+                "assetReferenceGuid": "d539ab5a290484685b1ef43623da366b"
+            }
+        ]
+    },
+    "upscaleFactor": 0
+}
