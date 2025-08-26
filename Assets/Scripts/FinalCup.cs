@@ -19,7 +19,19 @@ public class FinalCup : MonoBehaviour, IInteractable
     [Title("UI")] public Image notEnoughUIBox;
     public TMP_Text notEnoughText;
     public float fadeDuration = 0.2f, showUITime = 3;
+
+    [Title("Sound")] public AudioClip soundEffectSingle;
+    public AudioClip soundEffectAll;
+
+    private AudioSource source;
+    private int counter;
     
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+        counter = 0;
+    }
+
     public void Interact(Transform cat)
     {
         if (MatchaTracker.instance.currentHeldMatcha != 10)
@@ -31,7 +43,7 @@ public class FinalCup : MonoBehaviour, IInteractable
         }
         
         StartCoroutine(BeginAnimation(cat));
-        gameObject.GetComponentInChildren<InteractPrompt>().HidePrompt();
+        gameObject.GetComponentInChildren<InteractPrompt>().gameObject.SetActive(false);
     }
 
     private IEnumerator FadeAwayUI()
@@ -63,6 +75,17 @@ public class FinalCup : MonoBehaviour, IInteractable
         if (other.CompareTag(leafTag))
         {
             anim.SetTrigger("Burst");
+            counter++;
+
+            if (counter == 10)
+            {
+                source.PlayOneShot(soundEffectAll);
+            }
+            else
+            {
+                source.PlayOneShot(soundEffectSingle);
+            }
+            
             Destroy(other.gameObject);
         }
     }

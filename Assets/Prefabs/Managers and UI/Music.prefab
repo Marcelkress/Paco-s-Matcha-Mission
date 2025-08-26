@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7797690366556247181}
   - component: {fileID: 7256756918435578319}
   - component: {fileID: 2250329576525826656}
-  - component: {fileID: 8190156187987085611}
+  - component: {fileID: 4513144097116665119}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -43,7 +43,7 @@ AudioSource:
   m_GameObject: {fileID: 3470987661722062686}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8875211155668240596, guid: a7b0b262ae01b46dab32133e3489faab, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d17519bc6949949089d21cb3205f7baa, type: 3}
   m_PlayOnAwake: 1
@@ -144,14 +144,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracks:
-  - {fileID: 8300000, guid: cbeaf8135ef4742069b7c2d43c5c32a2, type: 3}
-  - {fileID: 8300000, guid: 8b958f73465f6470ba9b789ebca15e3d, type: 3}
   - {fileID: 8300000, guid: baa53978c6bdb47f09d6d945433cb5a8, type: 3}
+  - {fileID: 8300000, guid: 8b958f73465f6470ba9b789ebca15e3d, type: 3}
+  - {fileID: 8300000, guid: 43aa80c6582bc4be7bc4e01661650397, type: 3}
+  - {fileID: 8300000, guid: cbeaf8135ef4742069b7c2d43c5c32a2, type: 3}
+  - {fileID: 8300000, guid: ed29cc263344d48b7ae94cb90ad92fef, type: 3}
+  - {fileID: 8300000, guid: 7afc74618431a44079137c6d6ba634e9, type: 3}
+  - {fileID: 8300000, guid: 165c2f7c022c5454f94f85fb2e404374, type: 3}
+  - {fileID: 8300000, guid: 3e25f3b5b81c742e2989282b528efe55, type: 3}
   - {fileID: 8300000, guid: e1cc7f95f04544f9183e1cd9705bfc1e, type: 3}
+  - {fileID: 8300000, guid: 6a5cd4046f4b843e0b8050234ffc6e30, type: 3}
+  - {fileID: 8300000, guid: f0720a8bbda6e40d6b92b9a8ee9c31c2, type: 3}
+  - {fileID: 8300000, guid: c50a2875802584a73aeb1ed0f5c4c0bc, type: 3}
+  - {fileID: 8300000, guid: 48ecac2f821c74c1ca432a86ffba876b, type: 3}
+  - {fileID: 8300000, guid: 634aa7eec787d4ceb897c6a87764163e, type: 3}
+  - {fileID: 8300000, guid: c129484aa64b94fddbac16bc6fedabce, type: 3}
+  - {fileID: 8300000, guid: dd12b84a9f11c4f179cf74bda679db0d, type: 3}
+  - {fileID: 8300000, guid: a6cf255e730d6491c9e6588253746b05, type: 3}
   trackIndex: 0
   audioFadeTime: 2
   targetVolume: 0.8
---- !u!169 &8190156187987085611
+  audioSource: {fileID: 0}
+--- !u!169 &4513144097116665119
 AudioLowPassFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

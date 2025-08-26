@@ -19,6 +19,7 @@ public class MushroomBehavior : MonoBehaviour
     private Transform player;
     private bool canMove;
     private int faceDir;
+    private float findTargetTimer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,10 +32,17 @@ public class MushroomBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!InRange(playerDetectRadius))
+        findTargetTimer -= Time.deltaTime;
+        if (findTargetTimer <= 0)
         {
-            anim.SetBool("Running", false);
-            return;
+            float timerMax = 0.2f;
+            findTargetTimer += timerMax;
+            
+            if (!InRange(playerDetectRadius))
+            {
+                anim.SetBool("Running", false);
+                return;
+            }
         }
         
         faceDir = (int)Mathf.Sign(player.position.x - transform.position.x);
@@ -47,7 +55,6 @@ public class MushroomBehavior : MonoBehaviour
         {
             anim.SetBool("Running", false);   
         }
-
     }
 
     private void MoveAndAttack()
@@ -62,7 +69,7 @@ public class MushroomBehavior : MonoBehaviour
             {
                 anim.SetBool("Attack", true);
             }
-            else
+            else if (InRange(playerDetectRadius))
             {
                 anim.SetBool("Attack", false);
                 // Run towards player
