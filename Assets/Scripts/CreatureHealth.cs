@@ -1,11 +1,12 @@
 using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class CreatureHealth : MonoBehaviour, IHealth
 {
     public int maxHealth = 3;
 
-    private int currentHealth;
+    [ShowInInspector]private int currentHealth;
     private Animator anim; 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created

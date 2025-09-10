@@ -43,9 +43,9 @@ public class MushroomBehavior : MonoBehaviour
                 anim.SetBool("Running", false);
                 return;
             }
+            faceDir = (int)Mathf.Sign(player.position.x - transform.position.x);
         }
         
-        faceDir = (int)Mathf.Sign(player.position.x - transform.position.x);
         
         if (!IsAtEdge())
         {

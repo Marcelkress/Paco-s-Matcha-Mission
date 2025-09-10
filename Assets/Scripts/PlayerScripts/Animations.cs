@@ -8,8 +8,7 @@ public class Animations : MonoBehaviour
     private Movement movement;
     private PlayerHealth ph;
 
-    public float triggerJumpVelocityThreshold = 0.9f;
-    public float moveXThreshold = 0.5f;
+    public float minAnimationSpeed = 0.5f;
 
     private Vector3 orgScale;
     
@@ -29,7 +28,13 @@ public class Animations : MonoBehaviour
     {
         if (input.velocity.x != 0)
         {
-            anim.SetBool("Moving", input.inputVector.x != 0 ? true : false);
+            anim.SetBool("Moving", input.inputVector.x != 0);
+
+            anim.speed = Mathf.Clamp(Mathf.Abs(input.velocity.x), minAnimationSpeed, 1);
+        }
+        else
+        {
+            anim.speed = 1;
         }
         
         // Sprinting
