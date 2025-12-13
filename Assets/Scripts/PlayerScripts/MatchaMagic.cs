@@ -26,20 +26,22 @@ public class MatchaMagic : MonoBehaviour
 
     void Start()
     {
-        sliderUI.maxValue = coolDownTime;
+        sliderUI.maxValue = platformDestroyTime;
     }
     
     void Update()
     {
         coolDownTimer += Time.deltaTime;
-        sliderUI.value = coolDownTimer;
         
-        platformDestroyTimer += Time.deltaTime;
 
-        if (platformDestroyTimer >= platformDestroyTime)
+        platformDestroyTimer -= Time.deltaTime;
+        sliderUI.value = platformDestroyTimer;
+        
+        if (platformDestroyTimer <= 0)
         {
             Destroy(lastPlatform);
         }
+        
     }
     
     public void OnUseMagic(InputValue value)
@@ -50,7 +52,7 @@ public class MatchaMagic : MonoBehaviour
         if (value.isPressed && coolDownTimer >= coolDownTime)
         {
             coolDownTimer = 0;
-            platformDestroyTimer = 0;
+            platformDestroyTimer = platformDestroyTime;
             
             newPlatform = Instantiate(matchaPlatformPrefab, new Vector3(transform.position.x, transform.position.y - platformSpawnOffset.y, 0), 
                 quaternion.identity);
@@ -58,9 +60,8 @@ public class MatchaMagic : MonoBehaviour
             if(lastPlatform != null) 
                 Destroy(lastPlatform);
 
+            
             lastPlatform = newPlatform;
-            
-            
         }
     }
     

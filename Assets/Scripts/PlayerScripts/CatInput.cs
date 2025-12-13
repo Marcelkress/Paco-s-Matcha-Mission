@@ -15,6 +15,8 @@ public class CatInput : MonoBehaviour
     public float timeToJumpMax = 0.4f;
     [TabGroup("Jump")]
     public float coyoteTime = 0.1f;
+    [TabGroup("Jump")] 
+    public float releaseJumpMultiplier = 0.1f;
     [TabGroup("Jump")]
     public UnityEvent JumpEvent;
 
@@ -92,11 +94,11 @@ public class CatInput : MonoBehaviour
         
         int wallDirX = (movement.collisions.left) ? -1 : 1;
         wallSliding = false;
-
-        // Movement stuff
+        
+        
         if (movement.collisions.below)
         {
-            targetSpeed = AlterXSpeed();
+            targetSpeed = crouch ? crouchSpeed : (sprint ? sprintSpeed : moveSpeed);
         }
         
         float targetVelocityX = inputVector.x * targetSpeed;
@@ -167,6 +169,8 @@ public class CatInput : MonoBehaviour
                     velocity.x = -wallDirX * wallLeap.x;
                     velocity.y = wallLeap.y;
                 }
+
+                targetSpeed = sprintSpeed;
             }
             
             // Normal jumping
@@ -174,6 +178,9 @@ public class CatInput : MonoBehaviour
             {
                 velocity.y = maxJumpVelocity;
                 coyoteTimeCounter = 0;
+                
+                velocity.x = inputVector.x * sprintSpeed;
+                targetSpeed = sprintSpeed;
             }
             
             jumpTrigger = false;
@@ -183,12 +190,11 @@ public class CatInput : MonoBehaviour
         {
             if (velocity.y > minJumpVelocity)
             {
-                velocity.y = minJumpVelocity;
+                velocity.y = minJumpVelocity * releaseJumpMultiplier;
             }
+            
             jumpRelease = false;
         }
-        
-        
         
         velocity.y += gravity * Time.deltaTime;
         
@@ -198,36 +204,6 @@ public class CatInput : MonoBehaviour
         {
             velocity.y = 0;
         }
-    }
-    
-    private float AlterXSpeed()
-    {
-        float speed;
-        
-        if (sprint)
-        {
-            xSpeed = sprintSpeed;
-        }
-        else if(crouch)
-        {
-            xSpeed = crouchSpeed;
-        }
-        else
-        {
-            xSpeed = moveSpeed;
-        }
-        
-        if (movement.collisions.below)
-        {
-            lastSpeed = xSpeed;
-            speed = xSpeed;
-        }
-        else
-        {
-            speed = lastSpeed;
-        }
-
-        return speed;
     }
 
     private void JumpPerformed(InputAction.CallbackContext context)

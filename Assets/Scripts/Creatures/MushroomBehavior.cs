@@ -18,7 +18,7 @@ public class MushroomBehavior : MonoBehaviour
     private Animator anim;
     private Transform player;
     private bool canMove;
-    private int faceDir;
+    private int faceDir = 1;
     private float findTargetTimer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,6 +32,7 @@ public class MushroomBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         findTargetTimer -= Time.deltaTime;
         if (findTargetTimer <= 0)
         {
@@ -40,12 +41,12 @@ public class MushroomBehavior : MonoBehaviour
             
             if (!InRange(playerDetectRadius))
             {
+             
                 anim.SetBool("Running", false);
                 return;
             }
             faceDir = (int)Mathf.Sign(player.position.x - transform.position.x);
         }
-        
         
         if (!IsAtEdge())
         {

@@ -15,10 +15,13 @@ public class FinalCup : MonoBehaviour, IInteractable
     public string leafTag;
     public Animator anim;
     public Transform first, second;
+    public float changeSceneDelay = 1.5f;
 
     [Title("UI")] public Image notEnoughUIBox;
     public TMP_Text notEnoughText;
     public float fadeDuration = 0.2f, showUITime = 3;
+    public SpriteRenderer girlTextBox;
+    public TMP_Text girlText;
 
     [Title("Sound")] public AudioClip soundEffectSingle;
     public AudioClip soundEffectAll;
@@ -68,6 +71,21 @@ public class FinalCup : MonoBehaviour, IInteractable
             
             yield return new WaitForSeconds(timeBetweenLeafs);
         }
+
+        if (MatchaTracker.instance.currentHeldMatcha == 0)
+        {
+            StartCoroutine(AllMatchaUsed());
+        }
+    }
+
+    private IEnumerator AllMatchaUsed()
+    {
+        girlText.DOFade(1, fadeDuration);
+        girlTextBox.DOFade(1, fadeDuration);
+
+        yield return new WaitForSeconds(changeSceneDelay);
+        
+        SceneManager.instance.ChangeScene();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

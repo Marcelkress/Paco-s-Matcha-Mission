@@ -51,7 +51,12 @@ public class SceneManager : MonoBehaviour
         currentSceneIndex++;
         StartCoroutine(LoadScene(currentSceneIndex));
     }
-
+    public void ChangeScene(float delay)
+    {
+        currentSceneIndex++;
+        StartCoroutine(LoadScene(currentSceneIndex));
+    }
+    
     public void ReloadScene()
     {
         StartCoroutine(LoadScene(currentSceneIndex));

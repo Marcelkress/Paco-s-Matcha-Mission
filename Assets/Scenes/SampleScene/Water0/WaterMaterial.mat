@@ -94,7 +94,7 @@ Material:
     - _Mesh_Width: 20
     - _Reflection_Mask_Fading: 5
     - _Reflection_Mask_Height: 4
-    - _Reflection_Opacity: 0.5
+    - _Reflection_Opacity: 1
     - _Reflection_Scale: 2.5
     - _Reflection_Turbulence_Intensity: 0.5
     - _Reflection_Turbulence_Scale: 5
@@ -107,21 +107,21 @@ Material:
     - _Speed5: 1
     - _Speed6: 1
     - _Surface_Line_Length: 4
-    - _Underwater_Bottom_Opacity: 0.8
+    - _Underwater_Bottom_Opacity: 0.151
     - _Underwater_Enable_Opacity_Mask: 0
     - _Underwater_Mask_Fading: 2
     - _Underwater_Mask_Length: 4
-    - _Underwater_Opacity: 0.9
-    - _Underwater_Refraction_Intensity: 0.85
+    - _Underwater_Opacity: 0.475
+    - _Underwater_Refraction_Intensity: 5.42
     - _Underwater_Refraction_Scale: 2
     - _Underwater_Refraction_Speed: 1
     m_Colors:
-    - _Bottom_Color: {r: 0.105882354, g: 0.106464095, b: 0.34117648, a: 0}
+    - _Bottom_Color: {r: 0.105882294, g: 0.106464036, b: 0.34117642, a: 0}
     - _Reflection_Warp_Scale: {r: 0.1, g: 1, b: 0, a: 0}
     - _Reflection_Warp_Speed: {r: 0.5, g: 2, b: 0, a: 0}
-    - _Render_Camera_Position: {r: 59.7652, g: -8.84, b: 0, a: 0}
+    - _Render_Camera_Position: {r: 130.5893, g: -8.652, b: 0, a: 0}
     - _Render_Camera_Size: {r: 28.444445, g: 16, b: 0, a: 0}
     - _Surface_Line_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Top_Color: {r: 0.2823529, g: 0.7068706, b: 0.81960785, a: 0}
+    - _Top_Color: {r: 0.2823528, g: 0.7068706, b: 0.81960785, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

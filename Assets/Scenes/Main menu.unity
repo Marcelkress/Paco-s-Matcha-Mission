@@ -1158,6 +1158,74 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: tracks.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: baa53978c6bdb47f09d6d945433cb5a8, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b958f73465f6470ba9b789ebca15e3d, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 43aa80c6582bc4be7bc4e01661650397, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: cbeaf8135ef4742069b7c2d43c5c32a2, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e1cc7f95f04544f9183e1cd9705bfc1e, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f0720a8bbda6e40d6b92b9a8ee9c31c2, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[6]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c50a2875802584a73aeb1ed0f5c4c0bc, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[7]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 634aa7eec787d4ceb897c6a87764163e, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[8]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c129484aa64b94fddbac16bc6fedabce, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[9]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6cf255e730d6491c9e6588253746b05, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[10]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6cf255e730d6491c9e6588253746b05, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[11]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6cf255e730d6491c9e6588253746b05, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[12]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6cf255e730d6491c9e6588253746b05, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[13]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6cf255e730d6491c9e6588253746b05, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[14]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6cf255e730d6491c9e6588253746b05, type: 3}
+    - target: {fileID: 2250329576525826656, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
+      propertyPath: 'tracks.Array.data[15]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6cf255e730d6491c9e6588253746b05, type: 3}
     - target: {fileID: 3470987661722062686, guid: 157d1269d1f464f2780db069ddc8f270, type: 3}
       propertyPath: m_Name
       value: Music
@@ -1373,9 +1441,9 @@ RectTransform:
   m_Father: {fileID: 1953076507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 552}
-  m_SizeDelta: {x: 1920, y: 1200.0181}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1926022515
 MonoBehaviour:
@@ -1397,7 +1465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2340564595809866820, guid: 61672462f2fe0491794992a4895d3959, type: 3}
+  m_Sprite: {fileID: 5359986216648080172, guid: 22d1b98daa18a48d7b1d448c88eeba43, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
