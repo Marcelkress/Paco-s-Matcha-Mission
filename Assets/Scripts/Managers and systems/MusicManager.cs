@@ -6,6 +6,7 @@ using Sirenix.OdinInspector;
 public class MusicManager : MonoBehaviour
 {
     [Title("Tracks")] public AudioClip[] tracks; // Make sure this matches the build indexes
+    public AudioClip endSceneTrack;
     [ReadOnly]public int trackIndex;
 
     public float audioFadeTime = 2f, targetVolume = 0.8f;
@@ -47,8 +48,22 @@ public class MusicManager : MonoBehaviour
 
     private void StartMusic()
     {
-        NextTrack();
-        audioSource.DOFade(targetVolume, audioFadeTime);
+        if (SceneManager.instance.GetCurrentSceneIndex() == 2) //endscene
+        {
+            EndSceneMusic();
+        }
+        else
+        {
+            NextTrack();
+            audioSource.DOFade(targetVolume, audioFadeTime);
+        }
+    }
+
+    private void EndSceneMusic()
+    {
+        audioSource.clip = endSceneTrack;
+        audioSource.Play();
+        audioSource.volume = targetVolume;
     }
 
     public void NextTrack()
