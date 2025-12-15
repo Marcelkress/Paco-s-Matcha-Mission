@@ -167,6 +167,7 @@ public class IntroSequence : MonoBehaviour
     
     private IEnumerator End()
     {
+        
         promptUI.DOFade(0, fadeDuration);
         buttonImg.DOFade(0, fadeDuration);
         promptText.DOFade(0, fadeDuration);

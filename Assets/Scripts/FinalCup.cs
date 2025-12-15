@@ -37,7 +37,7 @@ public class FinalCup : MonoBehaviour, IInteractable
 
     public void Interact(Transform cat)
     {
-        if (MatchaTracker.instance.currentHeldMatcha != 10)
+        if (MatchaTracker.instance.currentHeldMatcha < 10)
         {
             notEnoughUIBox.DOFade(1, fadeDuration);
             notEnoughText.DOFade(1, fadeDuration);
