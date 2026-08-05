@@ -116,6 +116,7 @@ Material:
     - _Underwater_Refraction_Scale: 2
     - _Underwater_Refraction_Speed: 1
     m_Colors:
+    - White: {r: 1, g: 1, b: 1, a: 1}
     - _Bottom_Color: {r: 0.105882294, g: 0.106464036, b: 0.34117642, a: 0}
     - _Reflection_Warp_Scale: {r: 0.1, g: 1, b: 0, a: 0}
     - _Reflection_Warp_Speed: {r: 0.5, g: 2, b: 0, a: 0}

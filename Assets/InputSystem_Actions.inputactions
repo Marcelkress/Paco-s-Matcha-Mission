@@ -605,6 +605,17 @@
                     "action": "UseMagic",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2dc4489e-0b54-42b3-ae44-ee5be836125f",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseMagic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

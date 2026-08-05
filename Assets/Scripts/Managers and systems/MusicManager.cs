@@ -27,6 +27,7 @@ public class MusicManager : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
+            return;
         }
         
         SceneManager.instance.loadSceneEvent.AddListener(StopMusic);

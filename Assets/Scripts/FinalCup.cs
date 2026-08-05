@@ -28,17 +28,20 @@ public class FinalCup : MonoBehaviour, IInteractable
 
     private AudioSource source;
     private int counter;
+    private bool started;
     
     private void Start()
     {
         source = GetComponent<AudioSource>();
         counter = 0;
+        started = false;
     }
 
     public void Interact(Transform cat)
     {
-        if (MatchaTracker.instance.currentHeldMatcha < 10)
+        if (MatchaTracker.instance.currentHeldMatcha < 10 && started == false)
         {
+            started = true;
             notEnoughUIBox.DOFade(1, fadeDuration);
             notEnoughText.DOFade(1, fadeDuration);
             StartCoroutine(FadeAwayUI());
